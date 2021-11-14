@@ -24,9 +24,10 @@
 
 ## 手順①(アプリ作成)
 * ①[Cordova Health Plugin](https://github.com/dariosalvi78/cordova-plugin-health)のインストール
+
 * ②`config.xml`に`<preference name="AndroidXEnabled" value="true" />`を追加
 
-##  ①[Cordova Health Plugin](https://github.com/dariosalvi78/cordova-plugin-health)のインストール
+###  ①[Cordova Health Plugin](https://github.com/dariosalvi78/cordova-plugin-health)のインストール
 
 ### pluginを追加
 
