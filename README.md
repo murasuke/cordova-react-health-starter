@@ -1,7 +1,6 @@
-# Cordova で歩数を取得する方法(Cordova Health Plugin)
+# Cordova 歩数取得サンプル(Cordova Health Plugin)
 
 ![screenshot](./img/screenshot.png)
-
 
 
 ## 目的
