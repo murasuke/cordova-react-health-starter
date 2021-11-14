@@ -2,7 +2,6 @@
 
 ![screenshot](./img/screenshot.png)
 
-
 ## 目的
 
 * Cordova でGoogleFitから歩数を取得して表示します。
