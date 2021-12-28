@@ -27,7 +27,7 @@ const StepList: VFC = () => {
       if (available) {
         // Google Fitがインストールされていない場合、インストール用ダイアログを表示
         health.promptInstallFit(() => {
-          // 歩数データのy見取りアクセスを要求
+          // 歩数データの読み取りアクセスを要求
           health.requestAuthorization(
             [{ read: ['steps'] }],
             () => {
