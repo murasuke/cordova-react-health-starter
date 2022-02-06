@@ -289,8 +289,22 @@ keytool -list -v -keystore "%USERPROFILE%\.android\debug.keystore" -alias androi
   ![img140](./img/img140.png)
 
 
+## おまけ1
 
-## おまけ
+JDK(8.0.3220.6)で`SHA-1のフィンガープリント`をkeytoolで取得すると、取得結果の表示がおかしいです。
+具体的にはMD5,SHA1フィンガープリントの桁数が長すぎます。
+　⇒MD5にSHA1のフィンガープリントが表示されているようですので、こちらを使えば動きます。
+
+```
+～～途中略～～
+証明書のフィンガプリント:
+         MD5:  XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX
+         SHA1: XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX:XX
+         SHA256: SHA1withRSA (弱)
+```
+ 
+
+## おまけ2
 
 `Error: No Java files found which extend CordovaActivity.`
 というエラーが発生した場合、下記のコマンドを実行してplatformを入れなおす。
@@ -300,3 +314,4 @@ cordova platform rm android
 cordova platform add android
 ```
   * config.xml を変更した場合に起きるようです。
+  
